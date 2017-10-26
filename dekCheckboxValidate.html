@@ -1,0 +1,387 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test MA JS</title>
+</head>
+
+<body>
+<h2>Request for Student Consultation</h2>
+<p>This form must be completed by school district, or other program staff.</p>
+<p>A student consultation focuses on an individual student ages 6 thru 21 and is related to specific programming concerns.</p>
+<h3 tabindex="0">School Coordination Information</h3>
+<div class="form-group gcore-form-row" id="form-row-initiated_by">
+  <label for="initiated_by" class="control-label gcore-label-left">Consultation initiated by:</label>
+  <div class="gcore-input gcore-display-table" id="fin-initiated_by">
+    <input name="initiated_by" id="initiated_by" value="" placeholder="" maxlength="150" size="30" class="validate[&#039;required&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-title">
+  <label for="title" class="control-label gcore-label-left">Title:</label>
+  <div class="gcore-input gcore-display-table" id="fin-title">
+    <input name="title" id="title" value="" placeholder="" maxlength="150" size="30" class="validate[&#039;required&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-staff_work_phone">
+  <label for="staff_work_phone" class="control-label gcore-label-left">Work Phone:</label>
+  <div class="gcore-input gcore-display-table" id="fin-staff_work_phone">
+    <input name="staff_work_phone" id="staff_work_phone" value="" placeholder="" maxlength="150" size="30" class="validate[&#039;required&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-staff_cell_phone">
+  <label for="staff_cell_phone" class="control-label gcore-label-left">Cell Phone:</label>
+  <div class="gcore-input gcore-display-table" id="fin-staff_cell_phone">
+    <input name="staff_cell_phone" id="staff_cell_phone" value="" placeholder="" maxlength="150" size="30" class="form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-staff_email">
+  <label for="staff_email" class="control-label gcore-label-left">Email:</label>
+  <div class="gcore-input gcore-display-table" id="fin-staff_email">
+    <input name="staff_email" id="staff_email" value="" placeholder="" maxlength="150" size="30" class="validate[&#039;required&#039;,&#039;email&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-tvi_name">
+  <label for="tvi_name" class="control-label gcore-label-left">Name of TVI:</label>
+  <div class="gcore-input gcore-display-table" id="fin-tvi_name">
+    <input name="tvi_name" id="tvi_name" value="" placeholder="" maxlength="150" size="30" class="validate[&#039;required&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-coms_name">
+  <label for="coms_name" class="control-label gcore-label-left">Name of COMS:</label>
+  <div class="gcore-input gcore-display-table" id="fin-coms_name">
+    <input name="coms_name" id="coms_name" value="" placeholder="" maxlength="150" size="30" class="form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-dhh_name">
+  <label for="dhh_name" class="control-label gcore-label-left">Name of teacher of deaf/hard of hearing:</label>
+  <div class="gcore-input gcore-display-table" id="fin-dhh_name">
+    <input name="dhh_name" id="dhh_name" value="" placeholder="" maxlength="150" size="30" class="form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-esc_region">
+  <label for="esc_region" class="control-label gcore-label-left">ESC Region:</label>
+  <div class="gcore-input gcore-display-table" id="fin-esc_region">
+    <input name="esc_region" id="esc_region" value="" placeholder="" maxlength="150" size="30" class="validate[&#039;required&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<h3 tabindex="0">Student Information</h3>
+<div class="form-group gcore-form-row" id="form-row-student_name">
+  <label for="student_name" class="control-label gcore-label-left">Student Name:</label>
+  <div class="gcore-input gcore-display-table" id="fin-student_name">
+    <input name="student_name" id="student_name" value="" placeholder="" maxlength="150" size="30" class="validate[&#039;required&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-dob">
+  <label for="dob" class="control-label gcore-label-left">Date of Birth:</label>
+  <div class="gcore-input gcore-display-table" id="fin-dob">
+    <input name="dob" id="dob" value="" placeholder="" maxlength="150" size="30" class="validate[&#039;required&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<fieldset tabindex="0">
+  <legend>Hearing Status</legend>
+  <p>Please select one of the following answers about the student's hearing. This will help us determine the best consultant to work with you for this consultation.</p>
+  <div class="form-group gcore-form-row" id="form-row-hearing_status">
+    <label for="hearing_status" class="control-label gcore-label-left gcore-label-checkbox">Hearing Status</label>
+    <div class="gcore-input gcore-display-table" id="fin-hearing_status">
+      <div class="gcore-single-column" id="fclmn">
+        <input type="hidden" id="hearing_status_ghost" data-ghost="1" value="" class="form-control A" name="hearing_status" />
+        <div class="gcore-checkbox-item" id="fitem">
+          <input name="hearing_status[]" id="hearing_status" class="validate[&#039;group:16&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Has NO hearing problems" />
+          <label class="control-label gcore-label-checkbox" for="hearing_status">Has NO hearing problems</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem1">
+          <input name="hearing_status[]" id="hearing_status1" class="validate[&#039;group:16&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Is labeled deafblind and is on the Deafblind Census" />
+          <label class="control-label gcore-label-checkbox" for="hearing_status1">Is labeled deafblind and is on the Deafblind Census</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem2">
+          <input name="hearing_status[]" id="hearing_status2" class="validate[&#039;group:16&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Has a suspected hearing loss" />
+          <label class="control-label gcore-label-checkbox" for="hearing_status2">Has a suspected hearing loss</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem3">
+          <input name="hearing_status[]" id="hearing_status3" class="validate[&#039;group:16&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Wears a hearing aid or cochlear implant" />
+          <label class="control-label gcore-label-checkbox" for="hearing_status3">Wears a hearing aid or cochlear implant</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem4">
+          <input name="hearing_status[]" id="hearing_status4" class="validate[&#039;group:16&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Has hearing loss in one ear only" />
+          <label class="control-label gcore-label-checkbox" for="hearing_status4">Has hearing loss in one ear only</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</fieldset>
+<div class="form-group gcore-form-row" id="form-row-isd_etc">
+  <label for="isd_etc" class="control-label gcore-label-left">ISD/Co-op/Agency</label>
+  <div class="gcore-input gcore-display-table" id="fin-isd_etc">
+    <input name="isd_etc" id="isd_etc" value="" placeholder="" maxlength="150" size="30" class="validate[&#039;required&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-district">
+  <label for="district" class="control-label gcore-label-left">School District (if different):</label>
+  <div class="gcore-input gcore-display-table" id="fin-district">
+    <input name="district" id="district" value="" placeholder="" maxlength="150" size="30" class="form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-campus_name">
+  <label for="campus_name" class="control-label gcore-label-left">Campus Name:</label>
+  <div class="gcore-input gcore-display-table" id="fin-campus_name">
+    <input name="campus_name" id="campus_name" value="" placeholder="" maxlength="150" size="30" class="validate[&#039;required&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-grade">
+  <label for="grade" class="control-label gcore-label-left">Grade/Educational Placement:</label>
+  <div class="gcore-input gcore-display-table" id="fin-grade">
+    <input name="grade" id="grade" value="" placeholder="" maxlength="150" size="30" class="validate[&#039;required&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-vi_cause">
+  <label for="vi_cause" class="control-label gcore-label-left">Cause of visual impairment or eye condition:</label>
+  <div class="gcore-input gcore-display-table" id="fin-vi_cause">
+    <input name="vi_cause" id="vi_cause" value="" placeholder="" maxlength="250" size="30" class="validate[&#039;required&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-vi_more_info">
+  <label for="vi_more_info" class="control-label gcore-label-left">Additional information about the student's visual impairment:</label>
+  <div class="gcore-input gcore-display-table" id="fin-vi_more_info">
+    <textarea name="vi_more_info" id="vi_more_info" placeholder="" rows="5" cols="45" class="form-control A" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip=""></textarea>
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-hearing_cause">
+  <label for="hearing_cause" class="control-label gcore-label-left">Cause of hearing impairment (if applicable):</label>
+  <div class="gcore-input gcore-display-table" id="fin-hearing_cause">
+    <input name="hearing_cause" id="hearing_cause" value="" placeholder="" maxlength="250" size="30" class="form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-hi_more_info">
+  <label for="hi_more_info" class="control-label gcore-label-left">Additional information about student's hearing impairment:</label>
+  <div class="gcore-input gcore-display-table" id="fin-hi_more_info">
+    <textarea name="hi_more_info" id="hi_more_info" placeholder="" rows="12" cols="45" class="form-control A" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip=""></textarea>
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-Syndrome">
+  <label for="Syndrome" class="control-label gcore-label-left">If this student has an identified syndrome or condition such as CHARGE, SOD, Rubella, Pre-Maturity, etc., please include this information.</label>
+  <div class="gcore-input gcore-display-table" id="fin-Syndrome">
+    <input name="Syndrome" id="Syndrome" value="" placeholder="" maxlength="150" size="30" class="form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-esc_seen">
+  <label for="esc_seen" class="control-label gcore-label-left">Has this student been seen by an ESC VI or Deafblind Consultant?  Who?</label>
+  <div class="gcore-input gcore-display-table" id="fin-esc_seen">
+    <input name="esc_seen" id="esc_seen" value="" placeholder="" maxlength="150" size="30" class="validate[&#039;required&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-contacted_otr_staff">
+  <label for="contacted_otr_staff" class="control-label gcore-label-left">Who at TSBVI Outreach have you contacted regarding this issue?</label>
+  <div class="gcore-input gcore-display-table" id="fin-contacted_otr_staff">
+    <input name="contacted_otr_staff" id="contacted_otr_staff" value="" placeholder="" class="validate[&#039;required&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<h3 tabindex="0">Primary Reason(s) for Consultation Request</h3>
+<fieldset>
+  <legend>Please indicate the top 3 areas within the child's programming you would like this consultation to focus on from the list below. Please do NOT select more than 3 areas.</legend>
+  <div class="form-group gcore-form-row" id="form-row-area_of_concern">
+    <label for="area_of_concern" class="control-label gcore-label-left gcore-label-checkbox">Areas of Concern</label>
+    <div class="gcore-input gcore-display-table" id="fin-area_of_concern">
+      <div class="gcore-single-column" id="fclmn1">
+        <input type="hidden" id="area_of_concern_ghost" data-ghost="1" value="" class="form-control A" name="area_of_concern" />
+        <div class="gcore-checkbox-item" id="fitem5">
+          <input name="area_of_concern[]" id="area_of_concern" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Access to the General Education Curriculum" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern">Access to the General Education Curriculum</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem6">
+          <input name="area_of_concern[]" id="area_of_concern1" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Assistive Technology Issues" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern1">Assistive Technology Issues</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem7">
+          <input name="area_of_concern[]" id="area_of_concern2" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Behavior Issues" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern2">Behavior Issues</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem8">
+          <input name="area_of_concern[]" id="area_of_concern3" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Calendars" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern3">Calendars</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem9">
+          <input name="area_of_concern[]" id="area_of_concern4" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Routines" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern4">Routines</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem10">
+          <input name="area_of_concern[]" id="area_of_concern5" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Career and Vocational Skills" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern5">Career and Vocational Skills</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem11">
+          <input name="area_of_concern[]" id="area_of_concern6" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Communication Skills" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern6">Communication Skills</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem12">
+          <input name="area_of_concern[]" id="area_of_concern7" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Hearing &amp; Listening Skills" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern7">Hearing & Listening Skills</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem13">
+          <input name="area_of_concern[]" id="area_of_concern8" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Literacy Skills" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern8">Literacy Skills</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem14">
+          <input name="area_of_concern[]" id="area_of_concern9" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Math Skills" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern9">Math Skills</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem15">
+          <input name="area_of_concern[]" id="area_of_concern10" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Motor Skills" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern10">Motor Skills</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem16">
+          <input name="area_of_concern[]" id="area_of_concern11" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Orientation &amp; Mobility Skills" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern11">Orientation & Mobility Skills</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem17">
+          <input name="area_of_concern[]" id="area_of_concern12" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Independent Living Skills" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern12">Independent Living Skills</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem18">
+          <input name="area_of_concern[]" id="area_of_concern13" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Recreation &amp; Leisure Skills" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern13">Recreation & Leisure Skills</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem19">
+          <input name="area_of_concern[]" id="area_of_concern14" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Self-Determination Skills" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern14">Self-Determination Skills</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem20">
+          <input name="area_of_concern[]" id="area_of_concern15" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Sensory Efficiency Skills" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern15">Sensory Efficiency Skills</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem21">
+          <input name="area_of_concern[]" id="area_of_concern16" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Social Interaction Skills" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern16">Social Interaction Skills</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem22">
+          <input name="area_of_concern[]" id="area_of_concern17" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Tactile Skills" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern17">Tactile Skills</label>
+        </div>
+        <div class="gcore-checkbox-item" id="fitem23">
+          <input name="area_of_concern[]" id="area_of_concern18" class="validate[&#039;group:32&#039;] A" title="" style="" data-load-state="" data-tooltip="" type="checkbox" value="Transition to Adult Life" />
+          <label class="control-label gcore-label-checkbox" for="area_of_concern18">Transition to Adult Life</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group gcore-form-row" id="form-row-other_reasons">
+    <label for="other_reasons" class="control-label gcore-label-left">Are there any other reasons for this request?</label>
+    <div class="gcore-input gcore-display-table" id="fin-other_reasons">
+      <textarea name="other_reasons" id="other_reasons" placeholder="" rows="4" cols="45" class="validate[&#039;required&#039;] form-control A" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip=""></textarea>
+    </div>
+  </div>
+</fieldset>
+<h3 tabindex="0">Other Information</h3>
+<div class="form-group gcore-form-row" id="form-row-share">
+  <label for="share" class="control-label gcore-label-left">Please share other information you think we should know.</label>
+  <div class="gcore-input gcore-display-table" id="fin-share">
+    <textarea name="share" id="share" placeholder="" rows="5" cols="45" class="form-control A" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip=""></textarea>
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-examples">
+  <label for="examples" class="control-label gcore-label-left">Can you give examples of specific issues related to your concerns? For example, the student is in algebra class and we are having problems adapting the program so it is fully accessible to him. (Please be as specific as possible.)</label>
+  <div class="gcore-input gcore-display-table" id="fin-examples">
+    <textarea name="examples" id="examples" placeholder="" rows="5" cols="45" class="validate[&#039;required&#039;] form-control A" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip=""></textarea>
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-tried">
+  <label for="tried" class="control-label gcore-label-left">What have you tried?</label>
+  <div class="gcore-input gcore-display-table" id="fin-tried">
+    <textarea name="tried" id="tried" placeholder="" rows="5" cols="45" class="validate[&#039;required&#039;] form-control A" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip=""></textarea>
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-worked">
+  <label for="worked" class="control-label gcore-label-left">What has worked?</label>
+  <div class="gcore-input gcore-display-table" id="fin-worked">
+    <textarea name="worked" id="worked" placeholder="" rows="5" cols="45" class="validate[&#039;required&#039;] form-control A" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip=""></textarea>
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-not_worked">
+  <label for="not_worked" class="control-label gcore-label-left">What hasn't worked?</label>
+  <div class="gcore-input gcore-display-table" id="fin-not_worked">
+    <textarea name="not_worked" id="not_worked" placeholder="" rows="5" cols="45" class="validate[&#039;required&#039;] form-control A" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip=""></textarea>
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-OutcomeExpect">
+  <label for="OutcomeExpect" class="control-label gcore-label-left">What do you expect as a result of this consultation?</label>
+  <div class="gcore-input gcore-display-table" id="fin-OutcomeExpect">
+    <textarea name="OutcomeExpect" id="OutcomeExpect" placeholder="" rows="5" cols="45" class="validate[&#039;required&#039;] form-control A" title="" style="" data-wysiwyg="0" data-load-state="" data-tooltip=""></textarea>
+  </div>
+</div>
+<h3 tabindex="0">Family Information</h3>
+<div class="form-group gcore-form-row" id="form-row-parent_name">
+  <label for="parent_name" class="control-label gcore-label-left">Parent/Guardian Name:</label>
+  <div class="gcore-input gcore-display-table" id="fin-parent_name">
+    <input name="parent_name" id="parent_name" value="" placeholder="" maxlength="150" size="30" class="validate[&#039;required&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-parent_city_etc">
+  <label for="parent_city_etc" class="control-label gcore-label-left">Address including, Street, City, State, Zip:</label>
+  <div class="gcore-input gcore-display-table" id="fin-parent_city_etc">
+    <input name="parent_city_etc" id="parent_city_etc" value="" placeholder="" maxlength="150" size="30" class="validate[&#039;required&#039;] form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-parent_phone">
+  <label for="parent_phone" class="control-label gcore-label-left">Phone Number:</label>
+  <div class="gcore-input gcore-display-table" id="fin-parent_phone">
+    <input name="parent_phone" id="parent_phone" value="" placeholder="" maxlength="150" size="30" class="form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-parent_email">
+  <label for="parent_email" class="control-label gcore-label-left">Email:</label>
+  <div class="gcore-input gcore-display-table" id="fin-parent_email">
+    <input name="parent_email" id="parent_email" value="" placeholder="" maxlength="150" size="30" class="form-control A" title="" style="" data-inputmask="" data-load-state="" data-tooltip="" type="text" />
+  </div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-recaptcha">
+  <div class="gcore-input gcore-display-table" id="fin-recaptcha">{ReCaptcha}</div>
+</div>
+<div class="form-group gcore-form-row" id="form-row-button48">
+  <div class="gcore-input gcore-display-table" id="fin-button48">
+    <input name="button48" id="button48" type="submit" value="Submit" class="form-control A" style="" data-load-state="" />
+  </div>
+</div>
+	
+<!-- Inject the script below to limit the number of checkboxes that can be selected in a checkbox group -->
+<script LANGUAGE="javascript">
+	
+window.onload = function(concernNum) {
+	
+	
+	// function to de-select all checkboxes
+	var deselectCheckboxes = function( checkGroup ) {
+		var concernLength = checkGroup.length;
+		
+		for ( i = 0; i < concernLength; i++) {
+			if ( checkGroup[i].checked !== null && 
+				checkGroup[i].checked === true)
+				checkGroup[i].checked = null;
+		}
+	}
+	
+	var countSelected = function(checkBoxGroup) {
+		var checkCount = 0;
+		for ( i = 0; i < checkBoxGroup.length; i++) {
+			if ( checkBoxGroup[i].checked !== null && 
+				checkBoxGroup[i].checked === true)
+				checkCount++;
+		}
+		return checkCount;
+	}
+	// function to extract the value of the checked status when the submit button is clicked
+	document.getElementById("button48").onclick = function isValidCheckCount() {
+	
+		// Node list for checkbox group
+		var nodeList = document.getElementsByName("area_of_concern[]") // duplicate and alter this var to add more groups
+
+		// debug statements (remove when done)
+		console.log("The number of concerns is: " + nodeList.length);
+		console.dir(nodeList);
+		console.log("The first concern is checked: " + nodeList[0].checked );
+
+		// main code
+		alert("Total number of boxes checked: " + countSelected(nodeList));
+
+	} 
+}
+</script>
+</body>
+</html>
